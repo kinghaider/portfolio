@@ -1,2 +1,2 @@
-# porfolio
+# portfolio
 Curriculum vitae
