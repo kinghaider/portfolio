@@ -1,60 +1,249 @@
-<html>
-    <head>
-    <!-- CSS style 
-     asterix means affect whole page, for fonts / background seems good
-     otherwise specify the element
-     -->
-    <style>
-    * {
-        background: rgb(192, 192, 192);
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SME Web Development | Swakeleys Studio | London, England </title>
+
+    <!--Favicons-->
+    <link rel="icon" type="image/ico" href="assets/favicons/favicon.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/ico" href="assets/favicons/faviconLight.ico" media="(prefers-color-scheme: dark)">
+
+    <!--Shared Styleshees-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="css/floatingnav.css">-->
+    <link rel="stylesheet" href="css/floatingnavdropdown.css">
+
+    <!--Custom Styleshees-->
+    <link rel="stylesheet" href="css/heroOne.css">
+    <link rel="stylesheet" href="css/heroTwo.css">
+    <link rel="stylesheet" href="css/footerTwo.css">
+
+    <!--Scripts-->
+    <script src="js/nav.js" defer></script>
+
+</head>
+<body>
+    <!-----Navigation----->
+    <header id="navigation">
+        <div class="container">
+            <!--Nav Logo-->
+            <a href="" class="logo" aria-label="back to home">
+                <img src="assets/images/logo_full_dark.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <img src="assets/icons/hamburger.svg" alt="hamburger icon" width="24" height="24">
+                    </div>
+                </button>
+                <!-- Wrapper div needed for fixed height on ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll.-->
+                <div class="ul-wrapper">
+                    <ul id="expanded" class="ul" aria-expanded="false">
+                        <li class="li">
+                            <a href="index.html" class="li-link active">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="pricing.html" class="li-link"> Pricing</a>
+                        </li>
+
+                        <!-- Adjust stylesheet then remove this class if not dropdowns are not needed.-->
+                        <li class="li dropdown" tabindex="0">
+                            <span class="li-link">
+                                Services▾
+                            </span>
+                            <ul class="drop-ul">
+                                <li class="drop-li">
+                                    <a href="" class="li-link drop-link">Registration</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="" class="li-link drop-link">Our Classes</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="" class="li-link drop-link">Our Terms</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="li">
+                            <a href="" class="li-link"> Contact </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="contact-group">
+                <a href="mailto:support@swakeleystudio.com" class="mail">
+                    <img class="mail-icon" src="assets/icons/mail.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async"> support@swakeleystudio.com</a>
+    </header>
+
+    <section id="hero-1946">
+        <div class="container">
+            <div class="content">
+                <h2 class="title">Headline Headline Headline</h2>
+                <div class="flex">
+                    <p class="subtext">Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline Tagline</p>
+                    <a href="" class="button-solid">Contact us</a>
+                </div>
+            </div>
     
-    h2, p {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-top: 5;
-        margin-bottom: 5;
-    }
+            <picture class="picture">
+                <!-- Alternate images 
+                <source media="(min-width: 601px)" srcset="">
+                <source media="(max-width: 600px)" srcset="">
+                -->
+                <img decoding="async" src="/assets/images/blackbubblepattern.png" alt="black bubble pattern" width="1280" height="510">
+            </picture>
+    
+            <ul class="card-group">
+                <li class="item">
+                    <div class="text-group">
+                        <h3 class="h3">Selling point one</h3>
+                        <p class="item-text">Description to selling point one, this will scale with the text so can be as long / short as u want without worry.</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="text-group">
+                        <h3 class="h3">Selling point two</h3>
+                        <p class="item-text">Description to selling point two, this will scale with the text so can be as long / short as u want without worry.</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="text-group">
+                        <h3 class="h3">Selling point three</h3>
+                        <p class="item-text">Description to selling point three, this will scale with the text so can be as long / short as u want without worry.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="hero-229">
+        <div class="container">
+            <div class="flex-group">
+                <span class="topper">Name of organisation</span>
+                <h1 class="title">Title title title title title</h1>
+                <p class="subtext">
+                    Tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline tagline
+                </p>
+                <div class="button-group">
+                    <a href="" class="button-solid button">Explore More</a>
+                    <!-- Possible to comment out second button with no issues. -->
+                    <a href="" class="button-solid button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Background Image -->
+        <picture class="picture">
+            <!--
+            <source media="(max-width: 600px)" srcset="">
+            <source media="(min-width: 601px)" srcset="">
+            -->
+            <img loading="lazy" decoding="async" src="assets/images/blackbubblepattern.png" alt="pattern" width="2250" height="1500" aria-hidden="true">
+        </picture>
+    </section>
 
-
-    </style>
-
-    <link rel="icon" href="/crown.png" type="image/png">
-
-    <!-- Appears in browser url as name of page -->
-    <title>Portolio : Haider Razzak</title>
-
-    </head>
-    <!-- Write your comments here -->
-    <body>
-
-        <h1>Haider Razzak</h1>
-
-        <h2>About me</h2>
-        <p1>
-            I am a development consultant for CFMS. I freelance build simple websites with transparent pricing. For more details contact at: hrazzak@protonmail.com <br>
-            Based in London, UK
-        </p1>
-
-        <h2>Experience</h2>
-        <p2>
-            Aug 23 - Current <br>
-            Development consultant <br>
-            Corportate Financial Management Systems<br>
-            <br>
-            Aug 22 - Aug 23<br>
-            Support consultant <br>
-            Corportate Financial Management Systems<br>
-        </p2>
-
-        <h2>Education</h2>
-        <!-- <br> adds a line break-->
-        <p3>
-            Bachelors of Computer Science<br>
-            University of Surrey 
-        </p3>
-
-
-    </body>
+    <!-----Footer----->
+    <footer id="footer-269">
+        <div class="container">
+            <!-- Logo Group -->
+            <div class="logo-group">
+                <a aria-label="go back to home" class="logo" href="">
+                    <img class="logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="assets/images/logo_full_light.svg" alt="company logo" width="240" height="32">
+                </a>
+                <p class="text">
+                    What we do. What we do. What we do. What we do. What we do. What we do. What we do. 
+                </p>
+            </div>
+            <!-- Links -->
+            <ul class="nav">
+                <li class="nav-li">
+                    <span class="header">Sitemap</span>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="">Services</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="contact">
+                <li class="nav-li">
+                    <span class="header">Contact</span>
+                </li>
+                <li class="contact-li">
+                    <a class="contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+                </li>
+                <li class="contact-li">
+                    <a class="contact-link" href="mailto:support@swakeleysstudio.com">support@swakeleysstudio.com</a>
+                </li>
+                <!-- Social Media -->
+                <!--Adjust stroke attribute for outline colour-->
+                <li class="contact-li social-group">
+                    <div class="social">
+                        <a class="social-svg" aria-label="visit tiktok profile" href="">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                            </svg>
+                        </a>
+                        <a class="social-svg" aria-label="visit linkedin profile" href="">
+                            <!--<img class="social-img" aria-hidden="true" loading="lazy" decoding="async" src="assets/icons/facebook_icon.svg" alt="facebook" width="6" height="11">-->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                        </a>
+                        <a class="social-svg" aria-label="visit instagram profile" href="https://instagram.com">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white" 
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
